@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RauCuXanh.Views.RecoveryMailSentScreen"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Gửi mail khôi phục thành công"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   FontAttributes="bold"
+                   TextColor="Black" 
+                   Margin="60, 0"/>
+            <Frame HeightRequest="425"
+                   WidthRequest="325"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Padding="0"
+                   HasShadow="False">
+                <Image Source="plant_3.gif"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       Aspect="AspectFill"
+                       IsAnimationPlaying="True"/>
+            </Frame>
+            <Label Text="Hãy kiểm tra email của bạn để đặt lại mật khẩu."
+                   Margin="70, 24"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   TextColor="#BDBDBD" />
+            <Button Text="Quay lại đăng nhập"
+                    BackgroundColor="#5DB075"
+                    CornerRadius="20"
+                    Margin="16,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

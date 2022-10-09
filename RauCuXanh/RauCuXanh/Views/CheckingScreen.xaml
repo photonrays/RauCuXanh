@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RauCuXanh.Views.CheckingScreen"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#398439">
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Frame CornerRadius="160"
+                       HeightRequest="425"
+                       WidthRequest="325"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Padding="0"
+                       IsClippedToBounds="True"
+                       BackgroundColor="#B5FFF5">
+                    <Image Source="plant_2.jpg"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand"
+                           Aspect="AspectFill"
+                           IsAnimationPlaying="True" />
+                </Frame>
+                <Label Text="ĐANG ĐĂNG NHẬP ..."
+                       HorizontalTextAlignment="Center"
+                       FontSize="33"
+                       FontAttributes="bold"
+                       TextColor="White"
+                       Margin="0, 35" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RauCuXanh.Views.RegisterPage"
+             xmlns:effects="clr-namespace:RauCuXanh.Effects"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="32"
+                     Margin="0, 40, 0, 0">
+            <Label Text="Tạo tài khoản mới"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <StackLayout Spacing="16"
+                         Margin="16, 0">
+                <Frame Padding="1"
+                       BackgroundColor="#E8E8E8"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Frame Padding="0"
+                           CornerRadius="10"
+                           HasShadow="False">
+                        <Entry Placeholder="Tên tài khoản"
+                               TextColor="Black"
+                               BackgroundColor="#F6F6F6"
+                               HeightRequest="50">
+                            <Entry.Effects>
+                                <effects:PlainEntry />
+                            </Entry.Effects>
+                        </Entry>
+                    </Frame>
+                </Frame>
+                <Frame Padding="1"
+                       BackgroundColor="#E8E8E8"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Frame Padding="0"
+                           CornerRadius="10"
+                           HasShadow="False">
+                        <Entry Placeholder="Email"
+                               TextColor="Black"
+                               BackgroundColor="#F6F6F6"
+                               HeightRequest="50"
+                               Keyboard="Email">
+                            <Entry.Effects>
+                                <effects:PlainEntry />
+                            </Entry.Effects>
+                        </Entry>
+                    </Frame>
+                </Frame>
+                <Frame Padding="1"
+                       BackgroundColor="#E8E8E8"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Frame Padding="0"
+                           CornerRadius="10"
+                           HasShadow="False">
+                        <Entry Placeholder="Mật khẩu"
+                               TextColor="Black"
+                               BackgroundColor="#F6F6F6"
+                               HeightRequest="50"
+                               IsPassword="True">
+                            <Entry.Effects>
+                                <effects:PlainEntry />
+                            </Entry.Effects>
+                        </Entry>
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+            <FlexLayout AlignItems="Center" Margin="16, 0">
+                <CheckBox />
+                <Label FontSize="14">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Tôi đồng ý với " />
+                            <Span Text="điểu khoản sử dụng"
+                                  TextColor="#5DB075">
+                                <!--Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                              CommandParameter="https://learn.microsoft.com/xamarin/" />
+                                </Span.GestureRecognizers-->
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </FlexLayout>
+            <Button Text="Đăng ký"
+                    BackgroundColor="#5DB075"
+                    CornerRadius="20" 
+                    Margin="16,0"/>
+            <StackLayout Spacing="0" VerticalOptions="EndAndExpand">
+                <Frame BorderColor="Transparent"
+                       VerticalOptions="StartAndExpand">
+                    <Frame.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                                             EndPoint="0,1">
+                            <GradientStop Color="#FFFFFF"
+                                          Offset="0.1" />
+                            <GradientStop Color="#D6ECE4"
+                                          Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+                <Image VerticalOptions="EndAndExpand"
+                       Source="register_image.png" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

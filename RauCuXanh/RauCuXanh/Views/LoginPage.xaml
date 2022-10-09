@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RauCuXanh.Views.LoginPage"
+             xmlns:effects="clr-namespace:RauCuXanh.Effects"
+             Shell.NavBarIsVisible="False">
+    <StackLayout Spacing="33"
+                 Margin="0, 44, 0, 0">
+        <Image Source="logo.png" />
+        <Label Text="RAU CỦ XANH"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="36"
+               TextColor="#398439"
+               FontAttributes="Bold" />
+        <StackLayout Spacing="16"
+                     Margin="16, 33, 16, 45">
+            <Frame Padding="1"
+                   BackgroundColor="#E8E8E8"
+                   CornerRadius="10"
+                   HasShadow="False">
+                <Frame Padding="0"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Entry Placeholder="Tên tài khoản"
+                           TextColor="Black"
+                           BackgroundColor="#F6F6F6"
+                           HeightRequest="50">
+                        <Entry.Effects>
+                            <effects:PlainEntry />
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+            </Frame>
+            <Frame Padding="1"
+                   BackgroundColor="#E8E8E8"
+                   CornerRadius="10"
+                   HasShadow="False">
+                <Frame Padding="0"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Entry Placeholder="Mật khẩu"
+                           TextColor="Black"
+                           BackgroundColor="#F6F6F6"
+                           HeightRequest="50"
+                           IsPassword="True">
+                        <Entry.Effects>
+                            <effects:PlainEntry />
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+            </Frame>
+        </StackLayout>
+        <StackLayout Margin="16, 0">
+            <Button Text="Đăng nhập"
+                    BackgroundColor="#5DB075"
+                    CornerRadius="20" />
+            <Button Text="Mật khẩu"
+                    BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    TextColor="#5DB075" />
+        </StackLayout>
+        <FlexLayout JustifyContent="SpaceBetween">
+            <Button Text="Chưa có tài khoản ?"
+                    HorizontalOptions="StartAndExpand"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    TextColor="#BDBDBD" />
+            <Button Text="Tạo tài khoản mới"
+                    HorizontalOptions="EndAndExpand"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    TextColor="#5DB075" />
+        </FlexLayout>
+    </StackLayout>
+</ContentPage>
